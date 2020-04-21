@@ -182,7 +182,7 @@ h2 {
 }
 
 .media-link {
-    line-height: 50px;
+    line-height: 55px;
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -259,6 +259,33 @@ h2 {
     padding-top: 150px;
 }
 
-#gpm-block, #feb-block, #victorium-block, #utsa-block {
+.timeline-icon {
+    width: 25px;
+    height:25px;
+    stroke: white;
+    margin-top: 7.5px;
+    /*position: absolute;*/
+    /*transform: translate(35px, 8px);*/
+}
 
+.left-timeline-circle {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ff566e;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(31px);
+}
+
+.right-timeline-circle {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ff566e;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-71px);
 }
