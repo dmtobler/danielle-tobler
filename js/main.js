@@ -2,7 +2,18 @@
 
 (function() {
 
+
     $(document).ready(function() {
+
+        let mainContainer = $('#main-block-container');
+        let containerHeight = $('#main-block-container').css('height');
+        $(mainContainer).css('width', containerHeight.toString());
+
+        $(window).resize(function () {
+            mainContainer = $('#main-block-container');
+            containerHeight = $('#main-block-container').css('height');
+            $(mainContainer).css('width', containerHeight.toString());
+        });
 
 
         // setTimeout(function () {
