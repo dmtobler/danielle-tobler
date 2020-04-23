@@ -7,12 +7,14 @@
 
         let mainContainer = $('#main-block-container');
         let containerHeight = $('#main-block-container').css('height');
-        $(mainContainer).css('width', containerHeight.toString());
+        let nameWidth = $('#name-title').css('width');
+        console.log(nameWidth);
+        $(mainContainer).css('width', containerHeight);
 
         $(window).resize(function () {
             mainContainer = $('#main-block-container');
             containerHeight = $('#main-block-container').css('height');
-            $(mainContainer).css('width', containerHeight.toString());
+            $(mainContainer).css('width', containerHeight);
         });
 
 
