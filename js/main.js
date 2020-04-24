@@ -1,21 +1,26 @@
 "use strict";
 
 (function() {
+        // let mainContainer = $('#main-block-container');
+        // let containerHeight = $('#main-block-container').css('height');
+        // let nameWidth = $('#name-title').css('width');
+        // console.log(nameWidth);
+        // $(mainContainer).css('width', containerHeight);
 
+        let leftTimelineCirclesHeight = $('.left-timeline-circle').css('height');
+        let leftTimelineCirclesHeight = $('.left-timeline-circle').css('height');
 
     $(document).ready(function() {
 
-        let mainContainer = $('#main-block-container');
-        let containerHeight = $('#main-block-container').css('height');
-        let nameWidth = $('#name-title').css('width');
-        console.log(nameWidth);
-        $(mainContainer).css('width', containerHeight);
 
         $(window).resize(function () {
             mainContainer = $('#main-block-container');
             containerHeight = $('#main-block-container').css('height');
             $(mainContainer).css('width', containerHeight);
         });
+
+
+
 
 
         // setTimeout(function () {
