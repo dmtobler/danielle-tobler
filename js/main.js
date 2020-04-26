@@ -13,7 +13,6 @@
             let containerHeight = $('#main-block-container').css('height');
             $(mainContainer).css('width', containerHeight);
         });
-
     });
 
 })();
