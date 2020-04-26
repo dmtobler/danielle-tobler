@@ -18,8 +18,8 @@
 /* ICONS */
 
 .feather {
-    width: 35px;
-    height: 35px;
+    width: 4vh;
+    height: 4vh;
     stroke: white;
     stroke-width: 1.75;
     stroke-linecap: round;
@@ -29,8 +29,8 @@
 
 .nav-icon {
     margin-top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     stroke: rgba(255, 255, 255, .33);
     transition: .5s;
 }
@@ -163,9 +163,6 @@ a:hover, a:active {
 
 #main-block-content > h1 {
     text-align: center;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 5px;
     color: white;
     font-weight: normal;
     margin: 0 0 .4em 0;
@@ -297,3 +294,22 @@ a:hover, a:active {
     position: absolute;
     transform: translate(-100px);
 }
+
+/*#projects-container {*/
+/*    flex-wrap: wrap;*/
+/*    min-width: 700px;*/
+/*    max-width: 1000px;*/
+/*    justify-content: space-evenly;*/
+
+/*}*/
+
+
+/*.project {*/
+/*    !*border: 1px solid #928d87;*!*/
+/*    margin-top: 20px;*/
+/*    padding: 20px;*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    border-radius: 50%;*/
+/*    background-color: white;*/
+/*}*/
