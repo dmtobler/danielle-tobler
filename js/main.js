@@ -49,7 +49,4 @@
         overlay.classList.remove('active');
     }
 
-// let leftTimelineCirclesHeight = $('.left-timeline-circle').css('height');
-// let leftTimelineCirclesHeight = $('.left-timeline-circle').css('height');
-
 })();
