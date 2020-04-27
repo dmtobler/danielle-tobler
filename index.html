@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
+<div id="overlay"></div>
+
 <div id="main-block-container">
     <div class="main-block">
         <div id="main-block-content">
@@ -43,22 +45,58 @@
     <!--  LEFT TIMELINE COLUMN  -->
 
     <div id="timeline-left">
-        <div id="weather-map-block" class="timeline-project">
+
+        <div class="left-project-container">
+            <div data-modal-target="#weather-map-modal" id="weather-map-block" class="timeline-project">
+                <img id="weather-map-img" style="object-position: 20% 0" src="assets/img/weather-map.png" alt="Screenshot of Weather Map project">
+            </div>
             <div class="left-project-connector-line"></div>
-<!--            <h4 class="job-co-header">Mar 2020</h4>-->
-            <img id="weather-map-img" style="object-position: 20% 0" src="assets/img/weather-map.png" alt="Screenshot of Weather Map project">
-<!--            <p class="job-description">-->
-<!--                This project integrated Mapbox and Dark Sky APIs to render an interactive 3-day weather forecast website using JavaScript with jQuery. Users are able to place AJAX calls for different locations through a draggable marker or search a physical address through geocoding functionality.-->
-<!--            </p>-->
         </div>
 
-<!--        <div id="ocarina-block" class="timeline-project">-->
-<!--            <h4 class="job-title-header"><span class="highlight">Online Ocarina</span></h4>-->
-<!--            <h4 class="job-co-header">Feb 2020</h4>-->
-<!--            <p class="job-description">-->
-<!--                This project employed JavaScript with jQuery, event listeners, and general DOM manipulation to render a "playable" online ocarina based on The Legend of Zelda: Ocarina of Time (OoT) (Nintendo 1998). Users are able to produce notes through pressing the up, down, left, and right arrow keys as well as the "A" key. If an OoT song sequence is correctly played, users will receive an audio-visual confirmation followed by an audio clip of the song in question, emulating native gameplay.-->
-<!--            </p>-->
-<!--        </div>-->
+        <div id="weather-map-modal" class="modal">
+            <div class="modal-header">
+                <div class="project-header">Weather Map</div>
+                <button data-close-button class="close-btn">&times;</button>
+            </div>
+            <h3 class="project-date">Mar 2020</h3>
+            <hr />
+            <div class="modal-body">
+                <img src="assets/img/weather-map.png" />
+                <p class="project-description">
+                    This project integrated Mapbox and Dark Sky APIs to render an interactive 3-day weather forecast website using JavaScript with jQuery. Users are able to place AJAX calls for different locations through a draggable marker or search a physical address through geocoding functionality.
+                </p>
+                <div class="btn-container">
+                    <a target="_blank" class="project-link" href="https://dmtobler.github.io/WeatherMap/">View project</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="left-project-container">
+            <div data-modal-target="#ocarina-modal" id="ocarina-block" class="timeline-project">
+                <img id="ocarina-img" style="object-position: 50% 25px; transform: scale(1.25)" src="assets/img/ocarina.png" alt="Screenshot of Online Ocarina project">
+            </div>
+            <div class="left-project-connector-line"></div>
+        </div>
+
+        <div id="ocarina-modal" class="modal">
+            <div class="modal-header">
+                <div class="project-header">Online Ocarina</div>
+                <button data-close-button class="close-btn">&times;</button>
+            </div>
+            <h3 class="project-date">Feb 2020</h3>
+            <hr />
+            <div class="modal-body">
+                <img src="assets/img/ocarina.png" />
+                <p class="project-description">
+                    This project employed JavaScript with jQuery, event listeners, and general DOM manipulation to render a "playable" online ocarina based on The Legend of Zelda: Ocarina of Time (OoT) (Nintendo 1998). Users are able to produce notes through pressing the up, down, left, and right arrow keys as well as the "A" key. If an OoT song sequence is correctly played, users will receive an audio-visual confirmation followed by an audio clip of the song in question, emulating native gameplay.
+                </p>
+                <div class="btn-container">
+                    <a target="_blank" class="project-link" href="https://dmtobler.github.io/online-ocarina/">View project</a>
+                </div>
+            </div>
+        </div>
 
         <div id="gpm-block" class="timeline-job">
             <div class="left-timeline-circle">
@@ -98,20 +136,62 @@
             </div>
 
             <h4 class="job-title-header"><span class="highlight">Web Development Student</span></h4>
-            <h4 class="job-co-header"><span class="job-co"><a href="https://codeup.com/course-catalog/">Codeup</a></span> // Jan 2020 - Jun 2020</h4>
+            <h4 class="job-co-header"><span class="job-co"><a href="https://codeup.com/course-catalog/">Codeup</a></span> // Jan 2020 - Current</h4>
             <p class="job-description">
                 A fully-immersive, project-based, and intensive 20 week full stack Java career accelerator that provides students with 670+ hours of expert instruction in software development.
             </p>
         </div>
 
-        <div id="coffee-project-block" class="timeline-project">
+
+        <div class="right-project-container">
+            <div data-modal-target="#coffee-project-modal" id="coffee-project-block" class="timeline-project">
+                <img src="assets/img/coffee-project.png" alt="Screenshot of Coffee Project">
+            </div>
             <div class="right-project-connector-line"></div>
-<!--            <h4 class="job-title-header"><span class="highlight">Coffee Project</span></h4>-->
-<!--            <h4 class="job-co-header">Mar 2020</h4>-->
-            <img src="assets/img/coffee-project.png">
-<!--            <p class="job-description">-->
-<!--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa dolorem doloremque id qui temporibus, veniam. Deleniti doloremque eum expedita maxime molestiae pariatur placeat, quia, quis sapiente ullam voluptatibus, voluptatum.-->
-<!--            </p>-->
+        </div>
+
+        <div id="coffee-project-modal" class="modal">
+            <div class="modal-header">
+                <div class="project-header">Coffee Project</div>
+                <button data-close-button class="close-btn">&times;</button>
+            </div>
+            <h3 class="project-date">Mar 2020</h3>
+            <hr />
+            <div class="modal-body">
+                <img src="assets/img/coffee-project.png" />
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto blanditiis dolores magnam nihil odit quis repellendus veritatis vitae. Amet distinctio doloremque eligendi iure iusto nesciunt omnis quae rem sed!
+                </p>
+                <div class="btn-container">
+                    <a target="_blank" class="project-link" href="https://danielle-kate-fortuna.github.io/coffee-project/">View project</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-project-container">
+            <div data-modal-target="#fortune-cookie-modal" id="fortune-cookie-block" class="timeline-project">
+                <img src="assets/img/fortune-cookie.png" style="object-position: -2% 33px; transform: scale(1.5)" alt="Screenshot of Fortune Cookie project">
+            </div>
+            <div class="right-project-connector-line"></div>
+        </div>
+
+        <div id="fortune-cookie-modal" class="modal">
+            <div class="modal-header">
+                <div class="project-header">Fortune Cookie</div>
+                <button data-close-button class="close-btn">&times;</button>
+            </div>
+            <h3 class="project-date">Feb 2020</h3>
+            <hr />
+            <div class="modal-body">
+                <img src="assets/img/fortune-cookie.png" />
+                <p class="project-description">
+                    This collaborative project utilized JavaScript to create a web-based fortune cookie application. Randomized fortunes, lucky numbers, colors, and jokes are displayed upon page load and re-generate when the fortune cookie is clicked. The page layout also adjusts depending on the pixel width of the viewport
+                </p>
+                <div class="btn-container">
+                    <a target="_blank" class="project-link" href="https://hamilton-pod.github.io/hamilton-pod-1/">View project</a>
+                </div>
+            </div>
         </div>
 
 <!--        <div id="fortune-cookie-block" class="timeline-project">-->
